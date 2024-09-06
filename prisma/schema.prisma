@@ -12,3 +12,15 @@ model blog {
   content String
   title   String
 }
+
+model income{
+  id  String @id @default(auto()) @map("_id") @db.ObjectId
+  time String
+  date String
+  local_sale Int
+  cash Int
+  redbus_sale Int
+  redbus_cash Int
+  create_at DateTime @default(now())
+
+}
